@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/run_chaos.py --config configs/default.yaml --out reports/metrics.json)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(python3 scripts/generate_report.py --metrics reports/metrics.json --out reports/final_report.md)",
+      "Bash(python3 -m pytest tests/ -v)",
+      "Bash(make run-chaos *)",
+      "Bash(make report *)"
+    ]
+  }
+}
